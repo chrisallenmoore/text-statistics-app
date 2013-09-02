@@ -1,0 +1,146 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    padding-top: 60px;
+    background: image-url('ticks.png');
+    -webkit-font-smoothing: antialiased;
+}
+a {
+  font-weight: bold;
+  -webkit-transition:color 0.2s ease-in;
+  -moz-transition:color 0.2s ease-in;
+  -o-transition:color 0.2s ease-in;
+  transition:color 0.2s ease-in;
+}
+
+.top-bar-section {
+  li {
+    &:hover {
+      a {
+        color: #fff;
+        background-color: #263643 !important;
+      }
+    }
+    &.active {
+      a {
+        color: #fff;
+        background: #263643 !important;
+      }
+    }
+  }
+}
+
+.name {
+  h4{
+    padding-top: 6px;
+    a {
+      color: lighten(#486175, 20%);
+      &:hover {
+        color: #486175;
+        opacity: 0.8;
+      }
+    }
+  }
+
+}
+
+.top-bar-section {
+  ul {
+    li {
+      a {
+        &:hover {
+          background: #fff;
+        }
+        &:active {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+.top-banner {
+  background: #263643;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  h1 {
+    color: #fff;
+  }
+  p {
+    color: #cdc9ca;
+  }
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background: #486175;
+  height: 100%;
+  border-top: 2px solid #6385a1;
+  p {
+    font-size: 12px;
+    &.mission {
+      color: lighten($primary-color, 5%);
+    }
+    &.copyright {
+      color: darken($primary-color, 5%);
+    }
+  }
+}
+
+.the-container {
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity:0.4;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity:0.4;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity:0.4;
+  }
+  to {
+    opacity:1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity:0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-one {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  .icon-primary {
+    padding-top: 48px;
+    padding-left: 10px;
+    color: $primary-color;
+  }
+}
+
+.action-button {
+  @include button-base;
+  @include button-size;
+  @include button-style($primary-color, 3px, false);
+}

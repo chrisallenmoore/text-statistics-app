@@ -1,0 +1,77 @@
+<div class="row">
+  <div class="large-12 columns">
+    <form name="text-form" id="first-stop">
+      <textarea name="msg" id="msg"></textarea>
+    </form>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 small-centered columns">
+    <ul class="inline-list">
+      <li id="second-stop"><%= link_to('Load sample text', 'javascript:void(0)', class: 'small button sample-text action-button') %></li>
+      <li id="fifth-stop"><%= link_to('Clear text & stats', 'javascript:void(0)', class: 'small button clear-text action-button') %></li>
+    </ul>
+  </div>
+</div>
+
+<section class="text-statistics">
+
+  <div class="row">
+    <div class="large-12 columns">
+      <ul class="large-block-grid-3">
+        <li>
+          <div class="stats counts">
+            <h2>Counts</h2>
+            <ul>
+              <li>Character Count Total: <span id="character-count"></span></li>
+              <li>Word Count Total: <span id="word-count"></span></li>
+              <li>Sentence Count Total: <span id="sentence-count"></span></li>
+              <li>Syllable Count Total: <span id="syllable-count"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li id="third-stop">
+          <div class="stats averages">
+            <h2>Averages</h2>
+            <ul>
+              <li>Avg Characters per Word: <span id="avg-characters-per-word"></span></li>
+              <li>Avg Syllables per Word: <span id="avg-syllables-per-word"></span></li>
+              <li>Avg Characters per Sentence: <span id="avg-characters-per-sentence"></span></li>
+              <li>Avg Words per Sentence: <span id="avg-words-per-sentence"></span></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="stats readability">
+            <h2>Readability</h2>
+            <ul>
+              <li>Automated Readability Index: <span id="automated-readability-index"></span></li>
+              <li>Coleman Liau Index: <span id="coleman-liau-index"></span></li>
+              <li>Flesch Kindcaid Reading Ease: <span id="flesch-kincaid-reading-ease"></span></li>
+              <li>Flesch Kindcaid Grade Level: <span id="flesch-kincaid-grade-level"></span></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="word-list">
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h3 id="fourth-stop">Individual word counts: </h3>
+        <h6>List of the words in your text &amp; the number of times they appear in your text</h6>
+        <br/>
+
+        <!--- This is the list that stores the array items. --->
+        <ol id="list">
+          <!--- List items will be added dynamically. --->
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+</section>

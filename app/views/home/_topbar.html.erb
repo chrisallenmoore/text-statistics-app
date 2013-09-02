@@ -1,0 +1,56 @@
+<div class="contain-to-grid fixed">
+  <nav class="top-bar" data-options="is_hover:false">
+    <ul class="title-area">
+      <!-- Title Area -->
+      <li class="name">
+        <h4><%= link_to(image_tag('TextStatisticsApp-logo-sm.png', alt: 'Text Statistics App logo'), root_path, class: 'brand') %></h4>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Left Nav Section -->
+      <ul class="right">
+        <% if current_page?(controller: 'home') %>
+            <li class='active'>
+              <%= link_to('Home', root_path) %>
+            </li>
+        <% else %>
+            <li>
+              <%= link_to('Home', root_path) %>
+            </li>
+        <% end %>
+        <% if current_page?(controller: 'try') %>
+            <li class='active'>
+              <%= link_to('Try it now!', try_path) %>
+            </li>
+        <% else %>
+            <li>
+              <%= link_to('Try it now!', try_path) %>
+            </li>
+        <% end %>
+        <!--
+        <% if current_page?(controller: 'about') %>
+            <li class='active'>
+              <%= link_to('About', about_path) %>
+            </li>
+        <% else %>
+            <li>
+              <%= link_to('About', about_path) %>
+            </li>
+        <% end %>
+        <% if current_page?(controller: 'contact') %>
+            <li class='active'>
+              <%= link_to('Contact', contact_path) %>
+            </li>
+        <% else %>
+            <li>
+              <%= link_to('Contact', contact_path) %>
+            </li>
+        <% end %>-->
+      </ul>
+
+    </section>
+  </nav>
+</div>

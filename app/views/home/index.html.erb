@@ -1,0 +1,76 @@
+<% content_for :title, 'Text Statistics App by ClearTheNoise | Text Statistics for Writers' %>
+<%= render 'topbar' %>
+
+<div class="the-container">
+
+  <div class="top-banner">
+    <div class="row">
+      <div class="large-12 columns">
+
+        <h1>Text Statistics for writers</h1>
+
+        <h4 class="subheader">Get useful text statistics for FREE, as in beer. Your readers will thank you.</h4>
+
+        <%= link_to('Try It now!', try_path, class: 'medium button action-button') %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+
+      <section class="home-one">
+
+          <div class="large-4 columns text-center">
+            <span class="icon-stack icon-5x icon-primary">
+              <i class="icon-sign-blank icon-stack-base"></i></i>
+              <i class="icon-bullseye icon-light"></i>
+            </span>
+          </div>
+
+          <div class="large-8 columns">
+            <h2>How Text Statistics App can help</h2>
+
+            <p>Writing is hard enough as it is. Whether you're writing articles, blog posts, or the next big
+              novel, <%= link_to('Text Statistics App', try_path) %> helps you by giving useful stats to keep your
+              writing honed in on your intended audience.</p>
+
+            <p>With stuff like character counts, word counts and standardized readability levels, you'll be able to
+              speak more fluently with your readers.</p>
+          </div>
+
+      </section>
+
+      <hr>
+
+      <section class="home-two">
+        <ul class="large-block-grid-2">
+
+          <li>
+            <h2>Work how you like</h2>
+            <h6>You can either: </h6>
+
+            <p>Write in your favorite text editor, then simply copy and paste the text into
+              <%= link_to('Text Statistics App', try_path) %>.</p>
+            <h6>Or: </h6>
+
+            <p>Use <%= link_to('Text Statistics App', try_path) %> to compose your writing.</p>
+          </li>
+
+          <li><h2>Minimalist approach</h2>
+
+            <p><%= link_to('Text Statistics App', try_path) %> was created with the writer
+              in mind. We've used a subtle color scheme; buttons, text statistic results, etc. minimize distraction
+              which helps increase writing focus. </p>
+            <%= link_to('Try It now!', try_path, class: 'medium button action-button') %>
+
+          </li>
+
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+</div>
+<%= render 'footer' %>
