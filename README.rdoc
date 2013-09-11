@@ -1,28 +1,20 @@
-== README
+== Text Statistics App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the repository for [Text Statistics App].
 
-Things you may want to cover:
+This app uses the following web technologies:
 
-* Ruby version
+* [Ruby on Rails] 4, a  full stack, Web application framework that's optimized for programmer happiness and sustainable productivity.
 
-* System dependencies
+* [jQuery] JavaScript Library v1.10.2
 
-* Configuration
+* HTML5
 
-* Database creation
+* CSS3
 
-* Database initialization
+* [Foundation 4] - a responsive front-end framework
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+[Text Statistics App]: http://textstatistics.clearthenoise.com
+[Ruby on Rails]: http://rubyonrails.org/
+[jQuery]: http://jquery.com
+[Foundation 4]: http://foundation.zurb.com/
