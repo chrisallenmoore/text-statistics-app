@@ -191,36 +191,44 @@ $(document).ready(function(){
         $('.text-statistics').trigger('mouseenter').trigger('mouseleave');
     });
 
-    $(".text-statistics").on('mouseenter', function() {
-        $(".stats, .word-list").addClass("fade-in");
-    });
-    $(".text-statistics").on('mouseleave', function() {
-        $(".stats, .word-list").removeClass("fade-in").addClass("fadeOut");
+   // toggleClass with both mouseenter and mouseleave events simultaneously
+   $(".text-statistics").on({
+       mouseenter: function(){
+           $(".stats, .word-list").toggleClass("fade-in");
+       },
+       mouseleave: function(){
+           $(".stats, .word-list").toggleClass("fade-in");
+       }
+   });
+
+    // toggleClass with both mouseenter and mouseleave events simultaneously
+    $(".counts").on({
+        mouseenter: function(){
+            $(".averages, .readability").toggleClass("dim");
+        },
+        mouseleave: function(){
+            $(".averages, .readability").toggleClass("dim");
+        }
     });
 
-    $(".counts").on('mouseenter', function() {
-        $(".averages, .readability").addClass("dim");
-    });
-    $(".counts").on('mouseleave', function() {
-        $(".averages, .readability").removeClass("dim");
-    });
-    //$(".counts").on('mouseenter', function(){
-        //$(".averages, .readability").toggleClass("dim");
-    //});
-    $(".averages").on('mouseenter', function() {
-        $(".counts, .readability").addClass("dim");
-    });
-    $(".averages").on('mouseleave', function() {
-        $(".counts, .readability").removeClass("dim");
-    });
-    //$(".averages").('mouseenter', function(){
-        //$(".counts, .readability").toggleClass("dim");
-    //});
-    $(".readability").on('mouseenter', function() {
-        $(".counts, .averages").addClass("dim");
-    });
-    $(".readability").on('mouseleave', function() {
-        $(".counts, .averages").removeClass("dim");
+    // toggleClass with both mouseenter and mouseleave events simultaneously
+    $(".averages").on({
+        mouseenter: function(){
+            $(".counts, .readability").toggleClass("dim");
+        },
+        mouseleave: function(){
+            $(".counts, .readability").toggleClass("dim");
+        }
+    })
+
+    // toggleClass with both mouseenter and mouseleave events simultaneously
+    $(".readability").on({
+        mouseenter: function(){
+            $(".counts, .averages").toggleClass("dim");
+        },
+        mouseleave: function(){
+            $(".counts, .averages").toggleClass("dim");
+        }
     });
 
 });
