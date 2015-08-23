@@ -1,6 +1,6 @@
 == Text Statistics App
 
-This is the repository for {Text Statistics App}[http://textstatistics.clearthenoise.com/].
+This is the repository for {Text Statistics App}[http://text-statistics-app.herokuapp.com/].
 
 This app uses the following web technologies:
 
